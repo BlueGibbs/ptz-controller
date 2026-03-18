@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PTZ Camera Control Panel</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .camera {
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 24px;
+      width: 320px;
+    }
+
+    .camera h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .controls {
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      margin: 6px 0;
+    }
+
+    button {
+      width: 90px;
+      height: 40px;
+      margin: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .preset button {
+      width: 90px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= CAMERA 1 ================= -->
+<div class="camera" data-ip="192.168.1.100">
+  <h2>Camera 1</h2>
+
+  <div class="controls">
+    <div class="row">
+      <button data-action="UP">Up</button>
+    </div>
+
+    <div class="row">
+      <button data-action="LEFT">Left</button>
+      <button data-action="RIGHT">Right</button>
+    </div>
+
+    <div class="row">
+      <button data-action="DOWN">Down</button>
+    </div>
+
+    <div class="row">
+      <button data-action="ZOOMIN">Zoom +</button>
+      <button data-action="ZOOMOUT">Zoom −</button>
+    </div>
+
+    <div class="row">
+      <button data-action="FOCUSIN">Focus +</button>
+      <button data-action="FOCUSOUT">Focus −</button>
+    </div>
+
+    <div class="row">
+      <button data-preset="0">Preset 1</button>
+      <button data-preset="1">Preset 2</button>
+      <button data-preset="2">Preset 3</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CAMERA 2 ================= -->
+<div class="camera" data-ip="192.168.1.101">
+  <h2>Camera 2</h2>
+
+  <div class="controls">
+    <div class="row">
+      <button data-action="UP">Up</button>
+    </div>
+
+    <div class="row">
+      <button data-action="LEFT">Left</button>
+      <button data-action="RIGHT">Right</button>
+    </div>
+
+    <div class="row">
+      <button data-action="DOWN">Down</button>
+    </div>
+
+    <div class="row">
+      <button data-action="ZOOMIN">Zoom +</button>
+      <button data-action="ZOOMOUT">Zoom −</button>
+    </div>
+
+    <div class="row">
+      <button data-action="FOCUSIN">Focus +</button>
+      <button data-action="FOCUSOUT">Focus −</button>
+    </div>
+
+    <div class="row">
+      <button data-preset="0">Preset 1</button>
+      <button data-preset="1">Preset 2</button>
+      <button data-preset="2">Preset 3</button>
+    </div>
+  </div>
+</div>
+<script src="ptz.js"></script>
+</body>
+</html>
